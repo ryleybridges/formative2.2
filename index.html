@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shopping List</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Shopping List</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4 class="text-center">List</h4>
+          <div id="shoppingList">
+            <ul>
+              <!-- <li>New item inputted through addItem</li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <h4 class="text-center mt-5">New Item</h4>
+          <div id="addItem" class="d-flex justify-content-center">
+            <input id="itemInput" type="text" name="New Item" value=""></input><br>
+          </div>
+          <div id="categoryList" class="d-flex justify-content-center mt-2">
+            <fieldset>
+              <label for="category">Select a Category:</label>
+              <select name="category" id="category">
+                <option value="1">Produce</option>
+                <option value="2">Meat</option>
+                <option value="3">Baked</option>
+                <option value="4">Frozen Food</option>
+                <option value="5">Beverages</option>
+                <option value="6">Canned/Jarred Goods</option>
+                <option value="7">Dry/Baking Goods</option>
+                <option value="8">Pet Item</option>
+                <option value="9">Cleaning Products</option>
+                <option value="10">Personal Care</option>
+              </select>
+            </fieldset>
+          </div>
+          <button class="btn btn-primary mt-2 d-flex justify-content-center" onclick="addItem();">Add Item</button>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
