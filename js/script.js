@@ -14,6 +14,7 @@ function addItem(){
     addToShopping.innerHTML += '<li class="sub-list"> Category: ' + optionSelected + '</li>';
   addToShopping.innerHTML += '</li>';
   addToShopping.innerHTML += '<button class="btn btn-outline-danger btn-sm"><i class="fas fa-minus" onclick="removeItem();"></i></button>';
+  addToShopping.innerHTML += '</ul>';
 
 };
 
