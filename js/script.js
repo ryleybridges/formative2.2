@@ -1,7 +1,7 @@
 var x = 0;
 var array = [];
 
-function addItem(){
+function addItem(optionSelected){
   array[x] = document.getElementById('itemInput').value;
   var optionSelected = document.getElementById('category').value;
   // array.push(array[x]);
@@ -18,6 +18,11 @@ function addItem(){
 
 };
 
-function removeItem(){
+// function removeItem(){
+//   array.splice(0, array[x]);
+// };
 
-};
+function filterItems(x){
+  const result = array.filter(x.value = Meat);
+  console.log(result);
+}
