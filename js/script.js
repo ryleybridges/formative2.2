@@ -50,17 +50,14 @@ function addItem(x){
   list[x] = document.getElementById('itemInput').value;
   list.push(list[x]);
   console.log(list);
-  var optionSelected = document.getElementById('category').value;
-  list.push(optionSelected);
   document.getElementById('itemInput').value = '';
 
   var addToShopping = document.getElementById('shoppingList');
   addToShopping.innerHTML += '<li class="mt-2">';
   addToShopping.innerHTML += list[x];
-    addToShopping.innerHTML += '<li class="sub-list"> Category: ' + optionSelected + '</li>';
+    addToShopping.innerHTML += '<li class="sub-list"> Category: ' + list[x].category + '</li>';
   addToShopping.innerHTML += '</li>';
   addToShopping.innerHTML += '<button class="btn btn-outline-danger btn-sm" onclick="removeItem();"><i class="fas fa-minus"></i></button>';
-
 };
 
 // function removeItem(){
