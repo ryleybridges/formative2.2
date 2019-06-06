@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -21,15 +22,19 @@
           <h4 class="text-center mt-2">List</h4>
           <!-- <button type="button" name="button" class="btn btn-primary" onclick="filterItems();">Filter</button> -->
           <div id="shoppingList">
-            
+
           </div>
         </div>
         <div class="col">
           <h4 class="text-center mt-2">New Item</h4>
           <div id="addItem" class="d-flex justify-content-center">
-            <input id="itemInput" type="text" name="New Item" value=""></input><br>
+            <h5 class="mr-2">Item: </h5><input id="itemInput" type="text" name="New Item" value=""></input>
           </div>
-          <div id="categoryList" class="d-flex justify-content-center mt-2">
+          <div class="ui-tags d-flex justify-content-center mt-2">
+            <label for="tags"><h5 class="mr-2">Category: </h5></label>
+            <input id="tags">
+          </div>
+          <!-- <div id="categoryList" class="d-flex justify-content-center mt-2">
             <fieldset>
               <label for="category">Select a Category:</label>
               <select name="category" id="category">
@@ -46,8 +51,8 @@
                 <option value="Other">Other</option>
               </select>
             </fieldset>
-          </div>
-          <button class="btn btn-primary mt-2 d-flex justify-content-center" onclick="addItem();">Add Item</button>
+          </div> -->
+          <button class="btn btn-primary mt-2 ml-5 d-flex justify-content-center" onclick="addItem();">Add Item</button>
         </div>
       </div>
     </div>
@@ -55,7 +60,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
