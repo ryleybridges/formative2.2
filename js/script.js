@@ -11,6 +11,10 @@ var list = [
   {
     product: "Mince",
     category: "Meat"
+  },
+  {
+    product: "Shampoo",
+    category: "Personal Care"
   }
 ];
 
@@ -60,7 +64,7 @@ function addItem(x){
   var addToShopping = document.getElementById('shoppingList');
   addToShopping.innerHTML += '<li class="mt-2">';
   addToShopping.innerHTML += list[x];
-    addToShopping.innerHTML += '<li class="sub-list"> Category: ' + category + '</li>';
+    // addToShopping.innerHTML += '<li class="sub-list"> Category: ' + category + '</li>';
   addToShopping.innerHTML += '</li>';
   addToShopping.innerHTML += '<button class="btn btn-outline-danger btn-sm" onclick="removeItem();">Remove</button>';
 };
