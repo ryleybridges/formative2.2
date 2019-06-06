@@ -14,16 +14,20 @@ var list = [
   }
 ];
 
-for (var i = 0; i < list.length; i++) {
-  var addToShopping = document.getElementById('shoppingList');
-  addToShopping.innerHTML = '<ul>';
-    addToShopping.innerHTML = '<li>';
-    addToShopping.innerHTML = list[i].product;
-      addToShopping.innerHTML = '<li class="sub-list"> Category: ' + list[i].category + '</li>';
-    addToShopping.innerHTML = '</li>';
-  addToShopping.innerHTML = '</ul>';
-  // document.getElementById('shoppingList').innerHTML = '<button class="btn btn-outline-danger btn-sm"><i class="fas fa-minus" onclick="removeItem();"></i></button>';
+function showList(){
+  for (var i = 0; i < list.length; i++) {
+    var addToShopping = document.getElementById('shoppingList');
+    addToShopping.innerHTML = '<ul>';
+      addToShopping.innerHTML = '<li>';
+      addToShopping.innerHTML = list[i].product;
+        addToShopping.innerHTML = '<li class="sub-list"> Category: ' + list[i].category + '</li>';
+        // addToShopping.innerHTML = '<button class="btn btn-outline-danger btn-sm mr-4" onclick="removeItem();">Remove</button>';
+      addToShopping.innerHTML = '</li>';
+    addToShopping.innerHTML = '</ul>';
+  }
 }
+
+showList();
 
 $(function(){
   var availableTags = [
@@ -54,7 +58,7 @@ function addItem(x){
   var addToShopping = document.getElementById('shoppingList');
   addToShopping.innerHTML += '<li class="mt-2">';
   addToShopping.innerHTML += list[x];
-    // addToShopping.innerHTML += '<li class="sub-list"> Category: ' + list[x].category + '</li>';
+    // addToShopping.innerHTML += '<li class="sub-list"> Category: ' + list[x].tags + '</li>';
   addToShopping.innerHTML += '</li>';
   addToShopping.innerHTML += '<button class="btn btn-outline-danger btn-sm" onclick="removeItem();">Remove</button>';
 };
