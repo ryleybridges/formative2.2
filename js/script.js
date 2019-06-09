@@ -27,7 +27,7 @@ function showList(){
         addToShopping.innerHTML += '<li class="sub-list"> Category: ' + list[i].category + '</li>';
       addToShopping.innerHTML += '</li>';
     addToShopping.innerHTML += '</ul>';
-    addToShopping.innerHTML += '<button class="btn btn-outline-danger btn-sm" onclick="removeItem();">Remove</button>';
+    addToShopping.innerHTML += '<button class="btn btn-outline-danger btn-sm delete" onclick="removeItem();">Remove</button>';
   }
 }
 
@@ -66,11 +66,14 @@ function addItem(x){
   addToShopping.innerHTML += list[x];
     // addToShopping.innerHTML += '<li class="sub-list"> Category: ' + category + '</li>';
   addToShopping.innerHTML += '</li>';
-  addToShopping.innerHTML += '<button class="btn btn-outline-danger btn-sm" onclick="removeItem();">Remove</button>';
+  addToShopping.innerHTML += '<button class="btn btn-outline-danger btn-sm delete" onclick="removeItem();">Remove</button>';
 };
 
+// Intend to remove the item upon click of button - code currently removes whole list on double click
 // function removeItem(){
-//   list.splice(0, list.product);
+//   $('.delete').on('click', function(){
+//       $(this).parent().remove();
+//     });
 // };
 
 // function filterItems(category){
