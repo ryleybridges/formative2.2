@@ -69,11 +69,9 @@ function addItem(x){
   addToShopping.innerHTML += '<button class="btn btn-outline-danger btn-sm delete" onclick="removeItem();">Remove</button>';
 };
 
-// Intend to remove the item upon click of button - code currently removes whole list on double click
+// Intend to remove the item upon click of button
 // function removeItem(){
-//   $('.delete').on('click', function(){
-//       $(this).parent().remove();
-//     });
+//   $(list).splice(list.indexOf(x), 1);
 // };
 
 // function filterItems(category){
